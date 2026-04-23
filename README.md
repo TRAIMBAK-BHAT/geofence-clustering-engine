@@ -30,8 +30,7 @@ The system exposes a FastAPI service and provides a built-in Leaflet map UI for 
 
 ⚡ FastAPI backend with REST endpoint
 
-🗺 Interactive map visualization (Leaflet.js)
-
+```text
 GPS Data (MySQL)
    ↓
 Fetch & Clean Data
@@ -51,6 +50,7 @@ Merge Clusters
 Convert to GeoJSON
    ↓
 Visualize on Map (Leaflet)
+```
 
 ⚙️ Tech Stack
 Backend: FastAPI (Python)
