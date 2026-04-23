@@ -17,6 +17,7 @@ Coordinate transformations with PyProj
 The system exposes a FastAPI service and provides a built-in Leaflet map UI for visualization.
 
 🧠 Key Features
+
 📍 Automatic geofence generation from GPS data
 🧩 Unsupervised clustering of movement patterns
 🔺 Adaptive polygon generation (concave + convex fallback)
@@ -24,7 +25,9 @@ The system exposes a FastAPI service and provides a built-in Leaflet map UI for 
 🌍 CRS transformation (WGS84 ↔ UTM)
 ⚡ FastAPI backend with REST endpoint
 🗺 Interactive map visualization (Leaflet.js)
+
 🏗 How It Works
+
 GPS Data (MySQL)
         ↓
 Fetch & Clean Data
