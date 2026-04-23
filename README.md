@@ -60,35 +60,30 @@ Clustering: HDBSCAN, NumPy
 Data Processing: Pandas
 Frontend: Leaflet.js
 
-📡 API
-POST /geofence
+✅ Polished Version (Copy-Paste Ready)
+## 📡 API
+
+### POST `/geofence`
 
 Generate a geofence for a vehicle.
 
-Request
+#### Request
+```json
 {
   "vehicleId": "1234"
 }
-
 Response
 {
   "polygon_geojson": { ... },
   "raw_points": [ ... ]
 }
-
-
 🗺 Frontend
 Enter a vehicleId
-
 View:
-
-Generated geofence polygon (red)
-
-Raw GPS points (blue, optional)
-
+🔴 Generated geofence polygon
+🔵 Raw GPS points (optional)
 ▶️ Run Locally
 pip install -r requirements.txt
-
 uvicorn main:app --reload
 
 Open in browser:
