@@ -19,11 +19,17 @@ The system exposes a FastAPI service and provides a built-in Leaflet map UI for 
 🧠 Key Features
 
 📍 Automatic geofence generation from GPS data
+
 🧩 Unsupervised clustering of movement patterns
+
 🔺 Adaptive polygon generation (concave + convex fallback)
+
 🛠 Geometry validation, buffering, and simplification
+
 🌍 CRS transformation (WGS84 ↔ UTM)
+
 ⚡ FastAPI backend with REST endpoint
+
 🗺 Interactive map visualization (Leaflet.js)
 
 🏗 How It Works
@@ -54,3 +60,33 @@ Geospatial: Shapely, PyProj, AlphaShape
 Clustering: HDBSCAN, NumPy
 Data Processing: Pandas
 Frontend: Leaflet.js
+
+📡 API
+POST /geofence
+
+Generate a geofence for a vehicle.
+
+Request
+{
+  "vehicleId": "1234"
+}
+Response
+{
+  "polygon_geojson": { ... },
+  "raw_points": [ ... ]
+}
+
+
+🗺 Frontend
+Enter a vehicleId
+View:
+Generated geofence polygon (red)
+Raw GPS points (blue, optional)
+
+▶️ Run Locally
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+Open in browser:
+
+http://localhost:8000
