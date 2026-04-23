@@ -70,6 +70,7 @@ Request
 {
   "vehicleId": "1234"
 }
+
 Response
 {
   "polygon_geojson": { ... },
@@ -79,12 +80,16 @@ Response
 
 🗺 Frontend
 Enter a vehicleId
+
 View:
+
 Generated geofence polygon (red)
+
 Raw GPS points (blue, optional)
 
 ▶️ Run Locally
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 
 Open in browser:
