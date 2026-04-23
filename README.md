@@ -32,42 +32,24 @@ The system exposes a FastAPI service and provides a built-in Leaflet map UI for 
 
 🗺 Interactive map visualization (Leaflet.js)
 
-🏗 How It Works
-
 GPS Data (MySQL)
-
-        ↓
-
+   ↓
 Fetch & Clean Data
-        ↓
-
+   ↓
 Coordinate Projection (WGS84 → UTM)
-        ↓
-
+   ↓
 Clustering (HDBSCAN)
-        
-        ↓
-
+   ↓
 Hull Generation (Alpha Shape)
-        
-        ↓
-
+   ↓
 Fallback (Convex Hull if needed)
-        
-        ↓
-
+   ↓
 Polygon Optimization (Buffer + Simplify)
-        
-        ↓
-
+   ↓
 Merge Clusters
-        
-        ↓
-
+   ↓
 Convert to GeoJSON
-        
-        ↓
-
+   ↓
 Visualize on Map (Leaflet)
 
 ⚙️ Tech Stack
