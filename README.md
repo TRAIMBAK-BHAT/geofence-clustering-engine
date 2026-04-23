@@ -68,7 +68,7 @@ Frontend: Leaflet.js
 Generate a geofence for a vehicle.
 
 #### Request
-```json
+
 {
   "vehicleId": "1234"
 }
@@ -76,7 +76,7 @@ Response
 {
   "polygon_geojson": { ... },
   "raw_points": [ ... ]
-}'''
+}
 
 
 🗺 Frontend
